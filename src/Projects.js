@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
-import '../Css/App.css';
-import ProfilePic from '../Img/profilePic.jpeg';
-import WhiteHomeIcon from '../Icon/Theme Dark/house-door.svg';
-import BlackHomeIcon from '../Icon/Theme White/house-door.svg'
-import ThemeWhite from '../Icon/Theme Dark/toggle-off.svg';
-import ThemeBlack from '../Icon/Theme White/toggle-on.svg';
-import Translate from '../Icon/Theme Dark/translate.svg';
-import BlackTranslate from '../Icon/Theme White/translate.svg'
-import Instagram from '../Icon/Theme Dark/instagram.svg';
-import BlackInstagram from '../Icon/Theme White/instagram.svg';
-import GitHub from '../Icon/Theme Dark/github.svg';
-import BlackGitHub from '../Icon/Theme White/github.svg';
-import Linkedin from '../Icon/Theme Dark/linkedin.svg';
-import BlackLinkedin from '../Icon/Theme White/linkedin.svg';
-import Whats from '../Icon/Theme Dark/whatsapp.svg';
-import BlackWhats from '../Icon/Theme White/whatsapp.svg';
-import Email from '../Icon/Theme Dark/envelope-fill.svg';
-import BlackEmail from '../Icon/Theme White/envelope-fill.svg'
-import Intranet from '../Img/intranet.png'
+import './Css/App.css';
+import ProfilePic from './Img/profilePic.jpeg';
+import WhiteHomeIcon from './Icon/Theme Dark/house-door.svg';
+import BlackHomeIcon from './Icon/Theme White/house-door.svg'
+import ThemeWhite from './Icon/Theme Dark/toggle-off.svg';
+import ThemeBlack from './Icon/Theme White/toggle-on.svg';
+import Translate from './Icon/Theme Dark/translate.svg';
+import BlackTranslate from './Icon/Theme White/translate.svg'
+import Instagram from './Icon/Theme Dark/instagram.svg';
+import BlackInstagram from './Icon/Theme White/instagram.svg';
+import GitHub from './Icon/Theme Dark/github.svg';
+import BlackGitHub from './Icon/Theme White/github.svg';
+import Linkedin from './Icon/Theme Dark/linkedin.svg';
+import BlackLinkedin from './Icon/Theme White/linkedin.svg';
+import Whats from './Icon/Theme Dark/whatsapp.svg';
+import BlackWhats from './Icon/Theme White/whatsapp.svg';
+import Email from './Icon/Theme Dark/envelope-fill.svg';
+import BlackEmail from './Icon/Theme White/envelope-fill.svg'
+import Intranet from './Img/intranet.png'
 
 function Projects() {
   //CONFIG PARA MUDAR A COR DA PAGINA!
@@ -50,9 +50,9 @@ function Projects() {
   }, [toogle]);
 
   return (
-    <div style={{backgroundColor:ThemeColor}}>
+    <div style={{backgroundColor:ThemeColor}} className='Projects'>
         <nav style={{backgroundColor:NavColor, borderBottomColor:BorderColor}} >
-            <a href='/'><img src={HomeIcon} className='icon' title='Inicio'/></a>
+            <a href='/'><img src={HomeIcon} className='icon01' title='Inicio'/></a>
             <img src={TranslateIcon} className='icon02' title='Trocar Idioma'/>
             <img onClick={e => setToogle(state => !state)} src={ToggleIcon} className='icon03' title='Trocar Tema'/>
         </nav>
@@ -72,7 +72,7 @@ function Projects() {
             <a href='/'>
                 <h4 className='im' title='Sobre Mim' style={{color:TextColor}}>Sobre Mim</h4>
             </a>
-            <a href='Projects'>
+            <a href='/Projects'>
                 <h4 className='projects' title='Projetos' style={{color:TextColor}}>Projetos</h4>
             </a>
             <h1>Ricardo Lopes Rodrigues Junior</h1>

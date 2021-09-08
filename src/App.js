@@ -17,6 +17,7 @@ import Whats from './Icon/Theme Dark/whatsapp.svg';
 import BlackWhats from './Icon/Theme White/whatsapp.svg';
 import Email from './Icon/Theme Dark/envelope-fill.svg';
 import BlackEmail from './Icon/Theme White/envelope-fill.svg'
+import Projects from './Projects';
 
 function App() {
   //CONFIG PARA MUDAR A COR DA PAGINA!
@@ -52,7 +53,7 @@ function App() {
     <div style={{backgroundColor:ThemeColor}}>
       <nav style={{backgroundColor:NavColor, borderBottomColor:BorderColor}} >
         <a href='/'>
-          <img src={HomeIcon} className='icon' title='Inicio'/>
+          <img src={HomeIcon} className='icon01' title='Inicio'/>
         </a>
         <img src={TranslateIcon} className='icon02' title='Trocar Idioma'/>
         <img onClick={e => setToogle(state => !state)} src={ToggleIcon} className='icon03' title='Trocar Tema'/>
@@ -73,7 +74,7 @@ function App() {
         <a href='/'>
           <h4 className='im' title='Sobre Mim' style={{color:TextColor}}>Sobre Mim</h4>
         </a>
-        <a href='Components/Projects'>
+        <a href='/Projects'>
           <h4 className='projects' title='Projetos' style={{color:TextColor}}>Projetos</h4>
         </a>
         <h1>Ricardo Lopes Rodrigues Junior</h1>
@@ -102,7 +103,7 @@ function App() {
         <h3>
           <a href='http://toppus.net' className='job' target='_blank' style={{color:TextColor, borderBottomColor:BorderColor}}>Toppus Soluções e Serviços</a> - 12/20 -&gt; Atualmente
         </h3>
-        <p>Fiquei responsavel por criar uma intranet(uma página Web) para passar noticias para os colaboradores da empresa
+        <p>Fiquei responsavel por criar uma intranet(uma página Web) para passar notícias para os colaboradores da empresa
           e melhorar a entrega de comunicados importantes.
           Sendo assim um canal de comunicação e integração para todos os colaboradores da empresa.
         </p>

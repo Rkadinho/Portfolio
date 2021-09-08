@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './Css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Projects from './Components/Projects'
+import Projects from './Projects'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Switch>
       <Route path='/' exact={true} component={App} />
-      <Route path='/Components/Projects' component={Projects} />
+      <Route path='/Projects' component={Projects} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
