@@ -4,7 +4,7 @@ Um projeto simples feito com react.js e sem back end
 
 Pagina que fala um pouco de mim, meus projetos e meus conhecimentos:
 
-
+![image](https://user-images.githubusercontent.com/74570772/145909235-cd9b96f2-786f-4b8a-9cd8-8a3aef71a1ff.png)
 
 Essa segunda pagina mostra os projetos ja feito por mim:
 
